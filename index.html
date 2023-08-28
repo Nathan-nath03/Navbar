@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+</head>
+<style>
+    .left {
+        background-color: yellow
+    }
+
+    .left ul {
+        justify-content: center;
+        display: flex;
+        list-style: none;
+        padding: 10px;
+
+
+    }
+
+    .left li {
+        padding: 10px 20px;
+
+    }
+
+    .left li a {
+        text-decoration: none;
+        color:black;
+        font-size: 20px;
+        font-family: Audiowide;
+
+    }
+
+    .left ul li :hover {
+        background-color: lightblue;
+        transition: 0.3s;
+    }
+
+    @media screen and (max-width: 600px) {
+        nav ul {
+            height: 300px;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="left">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
